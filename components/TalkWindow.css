@@ -1,0 +1,38 @@
+.title {
+  text-align: center;
+}
+.talkBox {
+  /* display: flex; */
+  background-color: rgb(151 169 209);
+  font-size: 1.5rem;
+  width: 100%;
+  display: inline-block;
+}
+p {
+  padding: 10px;
+  border-radius: 30px;
+  /* box-shadow: 6px 6px 3px #666666; */
+  font-weight: bold;
+}
+.you p {
+  text-align: right;
+  background-color: rgb(165 221 141);
+  color: white;
+}
+
+.ai p {
+  border: 1px solid;
+  background-color: white;
+}
+
+input {
+  width: 80%;
+  font-size: large;
+}
+
+.send {
+  padding: 10px;
+  background-color: rgb(165 221 141);
+  color: white;
+  font-size: 1.5rem;
+}
