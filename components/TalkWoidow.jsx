@@ -43,19 +43,28 @@ export const TalkWindow = () => {
 
   return (
     <div className="talk">
-      {textList.map((text, idx) => {
-        return (
-          <div className="talkBox">
+      <div className="talkBox">
+        {textList.map((text, idx) => {
+          return (
             <div className={idx % 2 == 0 ? "ai" : "you"}>
-              <p key={idx}>{text}</p>
+              <span>
+                <p key={idx}>{text}</p>
+              </span>
             </div>
-          </div>
-        );
-      })}
-      <input type="text" onChange={handleChange} />
-      <button className="send" onClick={onSendhandler}>
-        送信
-      </button>
+          );
+        })}
+      </div>
+
+      <div className="inputBox">
+        <input
+          type="text"
+          placeholder="AIにメッセージを送信してみよう"
+          onChange={handleChange}
+        />
+        <button className="send" onClick={onSendhandler}>
+          送信
+        </button>
+      </div>
     </div>
   );
 };
